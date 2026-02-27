@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useStore } from '../store';
-import { Target, Server, Crosshair, ThumbsDown, ArrowRightCircle } from 'lucide-react';
+import { Target, ThumbsDown, ArrowRightCircle } from 'lucide-react';
 
 export const IdeaEngine = () => {
     const { ideas, addIdea } = useStore();
@@ -16,13 +16,13 @@ export const IdeaEngine = () => {
     };
 
     return (
-        <div>
+        <div className="animate-fade-in">
             <div className="page-header">
                 <h1 className="page-title">Idea Scoring Engine</h1>
                 <p className="page-description">10-10-10 filter and evaluation matrix. Find what matters.</p>
             </div>
 
-            <div className="card mb-6 flex-col gap-6">
+            <div className="card glass-panel mb-6 flex-col gap-6">
                 <h2 className="card-title">New Hypothesis Entry</h2>
                 <input
                     type="text"
