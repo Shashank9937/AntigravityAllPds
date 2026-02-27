@@ -26,7 +26,12 @@ export const ValidationTracker = () => {
                 <p className="page-description">Talk to customers. Measure willingness to pay.</p>
             </div>
 
-            <div className="grid-cols-3 mb-6">
+            <div className="grid-cols-4 mb-6">
+                <div className="card metric-card glass-panel" style={{ borderTop: '3px solid var(--danger)', backgroundColor: 'rgba(239, 68, 68, 0.05)' }}>
+                    <span className="metric-label flex items-center gap-2" style={{ color: 'var(--danger)' }}><Clock size={14} /> The Override Metric</span>
+                    <span className="metric-val" style={{ color: 'var(--danger)' }}>12<span style={{ fontSize: '1rem', color: 'var(--danger)', opacity: 0.8 }}> hrs</span></span>
+                    <span className="mt-2 text-xs font-bold" style={{ color: 'var(--danger)' }}>Since last customer talk (Max 48h)</span>
+                </div>
                 <div className="card metric-card glass-panel">
                     <span className="metric-label">Calls Target</span>
                     <span className="metric-val text-primary">{2 + logs.length} <span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>/ 40</span></span>

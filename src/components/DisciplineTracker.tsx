@@ -102,6 +102,39 @@ export const DisciplineTracker = () => {
                     </table>
                 </div>
             </div>
+
+            <div className="card mt-6 glass-panel mb-6">
+                <h2 className="card-title text-xl"><BookOpen size={20} /> The Monthly Founder Scorecard</h2>
+                <div className="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Score (1-10)</th>
+                                <th>What needs to change?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {[
+                                "Did I talk to customers every day this month?",
+                                "Did I ship something meaningful every week?",
+                                "Did I make at least 2 decisions I was afraid to make?",
+                                "Did I kill at least 2 false assumptions?",
+                                "Did I add leverage assets (content, network, process)?",
+                                "Did I protect my Deep Build Block from interruption?",
+                                "Did I advance the phase's governing question?",
+                                "Is the business in a stronger position than 30 days ago?"
+                            ].map((q, i) => (
+                                <tr key={i}>
+                                    <td>{q}</td>
+                                    <td><input type="number" min="1" max="10" className="input" style={{ width: '80px', padding: '0.25rem 0.5rem' }} defaultValue={10} /></td>
+                                    <td><input type="text" className="input" style={{ padding: '0.25rem 0.5rem' }} placeholder="Write action item here..." /></td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     );
 };

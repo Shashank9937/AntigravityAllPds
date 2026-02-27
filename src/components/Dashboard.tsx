@@ -85,19 +85,28 @@ export const Dashboard = () => {
                     )}
                 </div>
 
-                <div className="card flex-col gap-6 glass-panel">
-                    <h2 className="card-title text-xl mb-4"><Zap size={20} color="var(--warning)" /> Daily Operating Schedule</h2>
+                <div className="card flex-col gap-4 glass-panel">
+                    <h2 className="card-title text-xl"><Zap size={20} color="var(--warning)" /> Daily Operating Schedule</h2>
                     <div className="task-item" style={{ opacity: 0.5 }}>
-                        <Clock size={18} /> <span className="text-lg">05:00 - Ignition & Deep Read</span> <span className="badge badge-success ml-auto shadow-sm">DONE</span>
-                    </div>
-                    <div className="task-item" style={{ opacity: 0.5 }}>
-                        <Clock size={18} /> <span className="text-lg">07:00 - Family Business Ops</span> <span className="badge badge-success ml-auto shadow-sm">DONE</span>
+                        <Clock size={16} /> <span className="text-md">06:00 - 06:30: Daily Calibration</span> <span className="badge badge-success ml-auto shadow-sm">DONE</span>
                     </div>
                     <div className="task-item" style={{ borderColor: 'var(--accent-primary)', background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.1), transparent)' }}>
-                        <Clock size={18} color="var(--accent-primary)" /> <span className="text-lg font-bold" style={{ color: 'var(--accent-primary)' }}>08:00 - Deep Work 1: Customers</span> <span className="badge badge-info ml-auto shadow-sm" style={{ boxShadow: '0 0 8px rgba(59,130,246,0.3)' }}>CURRENT</span>
+                        <Clock size={16} color="var(--accent-primary)" /> <span className="text-md font-bold" style={{ color: 'var(--accent-primary)' }}>06:30 - 09:30: Deep Build Block</span> <span className="badge badge-info ml-auto shadow-sm" style={{ boxShadow: '0 0 8px rgba(59,130,246,0.3)' }}>CURRENT</span>
                     </div>
                     <div className="task-item border-dashed">
-                        <Clock size={18} /> <span className="text-lg">11:00 - Deep Work 2: Validation</span>
+                        <Clock size={16} /> <span className="text-md">09:30 - 12:00: Customer Block</span>
+                    </div>
+                    <div className="task-item border-dashed">
+                        <Clock size={16} /> <span className="text-md">12:00 - 13:00: Inbound + Admin</span>
+                    </div>
+                    <div className="task-item border-dashed">
+                        <Clock size={16} /> <span className="text-md">13:00 - 16:00: Build or Sell Block</span>
+                    </div>
+                    <div className="task-item border-dashed">
+                        <Clock size={16} /> <span className="text-md">16:00 - 17:00: Weekly Sync (Async)</span>
+                    </div>
+                    <div className="task-item border-dashed border-warning">
+                        <Clock size={16} color="var(--warning)" /> <span className="text-md text-warning">17:00 - 17:30: Daily Close</span>
                     </div>
                 </div>
             </div>

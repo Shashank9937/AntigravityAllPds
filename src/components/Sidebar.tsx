@@ -20,7 +20,7 @@ export const Sidebar = () => {
         { name: 'Execution Dashboard', path: '/', icon: <LayoutDashboard size={18} /> },
         { name: 'Idea Engine', path: '/ideas', icon: <Lightbulb size={18} /> },
         { name: 'Validation Tracker', path: '/validation', icon: <PhoneCall size={18} /> },
-        { name: '30-Day War Plan', path: '/warplan', icon: <Calendar size={18} /> },
+        { name: '12-Month Timeline', path: '/warplan', icon: <Calendar size={18} /> },
         { name: 'MVP Sprint', path: '/sprint', icon: <Rocket size={18} /> },
         { name: 'Growth Metrics', path: '/growth', icon: <TrendingUp size={18} /> },
         { name: 'Financials & Burn', path: '/financials', icon: <Wallet size={18} /> },

@@ -103,7 +103,7 @@ export const DecisionMatrix = () => {
                     </div>
 
                     {evaluations.length > 0 && (
-                        <div className="card glass-panel">
+                        <div className="card glass-panel mb-6">
                             <h3 className="card-title mb-4">Recent Evaluations</h3>
                             <div className="flex-col gap-3">
                                 {evaluations.map((ev, i) => (
@@ -118,6 +118,35 @@ export const DecisionMatrix = () => {
                             </div>
                         </div>
                     )}
+                </div>
+            </div>
+
+            <div className="card glass-panel mt-6 mb-12">
+                <h2 className="card-title text-xl mb-6">Mental OS: Core Thinking Frameworks</h2>
+                <div className="grid-cols-3 gap-6">
+                    <div className="flex-col gap-3 p-4 rounded bg-tertiary border border-border">
+                        <strong className="text-primary text-lg">The Uncertainty Stack</strong>
+                        <p className="text-secondary text-sm">Rank your top 3 uncertainties. Work always serves an uncertainty. If it doesn't, it's not the most important work.</p>
+                        <textarea className="textarea mt-2" placeholder="1. Do customers understand the value prop?&#10;2. Can we acquire them profitably?&#10;3. Will they churn after 30 days?" style={{ minHeight: '120px' }}></textarea>
+                    </div>
+
+                    <div className="flex-col gap-3 p-4 rounded bg-tertiary border border-border">
+                        <strong className="text-primary text-lg">The Reversibility Filter</strong>
+                        <p className="text-secondary text-sm">Is this reversible in 30 days? If yes, make it immediately. If no, take 24 hours and write a one-page brief.</p>
+                        <div className="flex-col gap-2 mt-2">
+                            <input type="text" className="input" placeholder="Decision to make..." />
+                            <div className="flex gap-2">
+                                <button className="btn btn-outline" style={{ flex: 1, borderColor: 'var(--success)', color: 'var(--success)' }}>Yes (Act Now)</button>
+                                <button className="btn btn-outline" style={{ flex: 1, borderColor: 'var(--danger)', color: 'var(--danger)' }}>No (Write Brief)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex-col gap-3 p-4 rounded bg-tertiary border border-border">
+                        <strong className="text-primary text-lg">The Narrative Test</strong>
+                        <p className="text-secondary text-sm">Explain what you do, for whom, and why it matters — without using your product's name.</p>
+                        <textarea className="textarea mt-2" placeholder="We help operations managers eliminate supply chain blind spots so their factory floor never stalls due to delayed cargo..." style={{ minHeight: '120px' }}></textarea>
+                    </div>
                 </div>
             </div>
         </div>
