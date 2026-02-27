@@ -1,22 +1,40 @@
-import React from 'react';
-import { ArrowUpRight, ArrowDownRight, Activity, XCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowUpRight, ArrowDownRight, Activity, XCircle, CheckCircle } from 'lucide-react';
 
 export const DecisionMatrix = () => {
+    const [oppName, setOppName] = useState('');
+    const [q1, setQ1] = useState('');
+    const [q2, setQ2] = useState('');
+    const [q3, setQ3] = useState('');
+    const [evaluations, setEvaluations] = useState<{ name: string, score: number }[]>([]);
+
+    const handleEvaluate = () => {
+        if (!oppName.trim() || !q1 || !q2 || !q3) return;
+
+        let score = 0;
+        if (q1.includes('useful')) score += 1;
+        if (q2.includes('massive')) score += 1;
+        if (q3.includes('core')) score += 1;
+
+        setEvaluations([{ name: oppName, score }, ...evaluations]);
+        setOppName(''); setQ1(''); setQ2(''); setQ3('');
+    };
+
     return (
-        <div>
+        <div className="animate-fade-in">
             <div className="page-header">
                 <h1 className="page-title">Decision Matrix Engine</h1>
                 <p className="page-description">High impact prioritization & 10-10-10 Filter.</p>
             </div>
 
-            <div className="grid-cols-2 gap-6 h-[500px]">
-                <div className="card h-full flex-col relative" style={{ minHeight: '400px' }}>
+            <div className="grid-cols-2 gap-6 pb-12">
+                <div className="card h-full flex-col relative glass-panel mb-6" style={{ minHeight: '400px' }}>
                     <h2 className="card-title text-center absolute top-4 left-1/2 transform -translate-x-1/2">High Impact</h2>
                     <span className="absolute left-4 top-1/2 transform -translate-y-1/2 -rotate-90 font-bold" style={{ color: 'var(--text-secondary)' }}>Low Priority</span>
                     <span className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 font-bold" style={{ color: 'var(--text-secondary)' }}>High Priority</span>
                     <h2 className="card-title text-center absolute bottom-4 left-1/2 transform -translate-x-1/2">Low Impact</h2>
 
-                    <div className="grid-cols-2 gap-4 h-full p-8">
+                    <div className="grid-cols-2 gap-4 h-full p-8 mt-8 mb-8">
                         <div className="bg-tertiary rounded flex items-center justify-center p-4 border border-border" style={{ border: '1px dashed var(--accent-primary)', background: 'rgba(59, 130, 246, 0.05)' }}>
                             <div className="text-center">
                                 <ArrowUpRight color="var(--accent-primary)" className="mx-auto mb-2" />
@@ -48,39 +66,58 @@ export const DecisionMatrix = () => {
                     </div>
                 </div>
 
-                <div className="card flex-col gap-6">
-                    <h2 className="card-title">10-10-10 Filter (Idea/Commitment Check)</h2>
-                    <div className="flex-col gap-4">
-                        <div>
-                            <label className="metric-label" style={{ color: 'var(--text-primary)' }}>Opportunity Name</label>
-                            <input type="text" className="input mt-1" placeholder="e.g. Partnering with XYZ corp" />
+                <div className="flex-col gap-6">
+                    <div className="card flex-col gap-6 glass-panel mb-6">
+                        <h2 className="card-title text-xl">10-10-10 Filter (Idea/Commitment Check)</h2>
+                        <div className="flex-col gap-4">
+                            <div>
+                                <label className="metric-label" style={{ color: 'var(--text-primary)' }}>Opportunity Name</label>
+                                <input type="text" className="input mt-1" placeholder="e.g. Partnering with XYZ corp" value={oppName} onChange={e => setOppName(e.target.value)} />
+                            </div>
+                            <div>
+                                <label className="metric-label" style={{ color: 'var(--text-primary)' }}>1. In 10 DAYS, will I regret spending this week on it?</label>
+                                <select className="input mt-1 dropdown" value={q1} onChange={e => setQ1(e.target.value)}>
+                                    <option value="">Select...</option>
+                                    <option value="useful">No, it's immediately useful</option>
+                                    <option value="distraction">Yes, it's a distraction</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="metric-label" style={{ color: 'var(--text-primary)' }}>2. In 10 MONTHS, will this matter if it works?</label>
+                                <select className="input mt-1 dropdown" value={q2} onChange={e => setQ2(e.target.value)}>
+                                    <option value="">Select...</option>
+                                    <option value="massive">Yes, massive inflection point</option>
+                                    <option value="marginal">No, marginal gain</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="metric-label" style={{ color: 'var(--text-primary)' }}>3. In 10 YEARS, will this have been worth building?</label>
+                                <select className="input mt-1 dropdown" value={q3} onChange={e => setQ3(e.target.value)}>
+                                    <option value="">Select...</option>
+                                    <option value="core">Yes, core to mission</option>
+                                    <option value="irrelevant">No, irrelevant</option>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label className="metric-label" style={{ color: 'var(--text-primary)' }}>1. In 10 DAYS, will I regret spending this week on it?</label>
-                            <select className="input mt-1">
-                                <option>Select...</option>
-                                <option>No, it's immediately useful</option>
-                                <option>Yes, it's a distraction</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label className="metric-label" style={{ color: 'var(--text-primary)' }}>2. In 10 MONTHS, will this matter if it works?</label>
-                            <select className="input mt-1">
-                                <option>Select...</option>
-                                <option>Yes, massive inflection point</option>
-                                <option>No, marginal gain</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label className="metric-label" style={{ color: 'var(--text-primary)' }}>3. In 10 YEARS, will this have been worth building?</label>
-                            <select className="input mt-1">
-                                <option>Select...</option>
-                                <option>Yes, core to mission</option>
-                                <option>No, irrelevant</option>
-                            </select>
-                        </div>
+                        <button className="btn btn-primary mt-2 w-full" onClick={handleEvaluate} disabled={!oppName || !q1 || !q2 || !q3}>Evaluate & Store</button>
                     </div>
-                    <button className="btn btn-outline mt-auto w-full">Evaluate & Store</button>
+
+                    {evaluations.length > 0 && (
+                        <div className="card glass-panel">
+                            <h3 className="card-title mb-4">Recent Evaluations</h3>
+                            <div className="flex-col gap-3">
+                                {evaluations.map((ev, i) => (
+                                    <div key={i} className="flex justify-between items-center p-3 rounded" style={{ background: 'rgba(255,255,255,0.02)' }}>
+                                        <span>{ev.name}</span>
+                                        <span className={`badge ${ev.score === 3 ? 'badge-success' : ev.score === 2 ? 'badge-info' : 'badge-danger'}`}>
+                                            {ev.score === 3 ? 'F*CK YES' : ev.score === 2 ? 'MAYBE (WAIT)' : 'HELL NO'}
+                                            ({ev.score}/3)
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

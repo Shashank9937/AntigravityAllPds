@@ -3,6 +3,7 @@ import { Bot, Copy, Sparkles, TerminalSquare } from 'lucide-react';
 
 export const AiAutomations = () => {
     const [copied, setCopied] = useState<number | null>(null);
+    const [runningWorkflow, setRunningWorkflow] = useState<number | null>(null);
 
     const prompts = [
         { title: 'Investor Outreach Pattern', description: 'Creates custom email based on fund thesis.', text: 'Act as a Series A fund analyst. Review my company bio and this specific VC fund thesis. Draft a 4-line email directly to the managing partner highlighting the alignment on B2B logistics moats. Tone: blunt, data-driven, founder-level authority.' },
@@ -16,32 +17,37 @@ export const AiAutomations = () => {
         setTimeout(() => setCopied(null), 2000);
     };
 
+    const handleRunWorkflow = (i: number) => {
+        setRunningWorkflow(i);
+        setTimeout(() => setRunningWorkflow(null), 3000);
+    };
+
     return (
-        <div>
+        <div className="animate-fade-in">
             <div className="page-header">
                 <h1 className="page-title">AI Leverage Hub</h1>
                 <p className="page-description">Standardized intelligence workflows. Don't do manual labor twice.</p>
             </div>
 
             <div className="grid-cols-3 mb-6">
-                <div className="card metric-card">
+                <div className="card metric-card glass-panel">
                     <span className="metric-label flex items-center gap-2"><Sparkles size={14} /> Hours Saved by AI</span>
                     <span className="metric-val text-primary">14<span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}> hrs/wk</span></span>
                 </div>
-                <div className="card metric-card">
+                <div className="card metric-card glass-panel">
                     <span className="metric-label flex items-center gap-2"><TerminalSquare size={14} /> Saved Workflows</span>
                     <span className="metric-val text-primary">8</span>
                 </div>
-                <div className="card metric-card" style={{ border: '1px dashed var(--accent-primary)', background: 'transparent', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <span className="text-primary font-bold"><Bot size={18} className="inline mr-2" /> Build Custom Bot</span>
+                <div className="card metric-card glass-panel flex-col gap-2" style={{ border: '1px dashed var(--accent-primary)', background: 'rgba(59,130,246,0.05)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => alert('Opening Custom Bot Builder...')}>
+                    <span className="text-primary font-bold"><Bot size={18} className="inline mr-2" color="var(--accent-primary)" /> Build Custom Bot</span>
                 </div>
             </div>
 
             <div className="grid-cols-2 gap-6">
                 <div className="flex-col gap-6">
-                    <h2 className="card-title">Prompt Library (Execution Grade)</h2>
+                    <h2 className="card-title text-xl"><Bot size={20} color="var(--accent-secondary)" /> Prompt Library (Execution Grade)</h2>
                     {prompts.map((p, i) => (
-                        <div key={i} className="card p-4 bg-tertiary border-border hover:border-accent transition-colors" style={{ borderColor: 'var(--border-color)', transition: 'all 0.2s' }}>
+                        <div key={i} className="card p-4 bg-tertiary border-border hover:border-accent transition-colors glass-panel" style={{ borderColor: 'var(--border-color)', transition: 'all 0.2s' }}>
                             <h3 className="text-primary font-bold mb-1 flex items-center justify-between">
                                 {p.title}
                                 <button
@@ -53,30 +59,36 @@ export const AiAutomations = () => {
                                 </button>
                             </h3>
                             <p className="text-secondary text-sm mb-3">{p.description}</p>
-                            <div className="bg-primary p-3 rounded text-sm text-muted" style={{ fontFamily: 'monospace', fontSize: '0.8rem', background: '#000' }}>
+                            <div className="bg-primary p-3 rounded text-sm text-muted" style={{ fontFamily: 'monospace', fontSize: '0.8rem', background: 'rgba(0,0,0,0.5)' }}>
                                 {p.text}
                             </div>
                         </div>
                     ))}
                 </div>
 
-                <div className="card h-full flex-col gap-4">
-                    <h2 className="card-title"><Bot size={18} color="var(--accent-primary)" /> Automated Analysis Workflows</h2>
-                    <div className="flex items-center gap-4 p-4 border border-border rounded" style={{ background: 'var(--bg-tertiary)' }}>
-                        <div className="bg-primary rounded p-2"><TerminalSquare size={20} color="var(--success)" /></div>
-                        <div>
+                <div className="card h-full flex-col gap-4 glass-panel">
+                    <h2 className="card-title text-xl"><Bot size={20} color="var(--accent-primary)" /> Automated Analysis Workflows</h2>
+
+                    <div className="flex items-center gap-4 p-4 rounded transition-all" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid var(--border-subtle)' }}>
+                        <div className="bg-primary rounded p-2" style={{ background: 'rgba(16,185,129,0.1)' }}><TerminalSquare size={20} color="var(--success)" /></div>
+                        <div style={{ flex: 1 }}>
                             <strong className="block">Call Transcript Extractor</strong>
                             <span className="text-secondary text-sm">Upload raw customer calls &rarr; Outputs structured Pain, WTP, Objections</span>
                         </div>
-                        <button className="btn btn-outline ml-auto text-xs">Run Workflow</button>
+                        <button className="btn btn-outline text-xs" onClick={() => handleRunWorkflow(1)} disabled={runningWorkflow === 1}>
+                            {runningWorkflow === 1 ? 'Running...' : 'Run Workflow'}
+                        </button>
                     </div>
-                    <div className="flex items-center gap-4 p-4 border border-border rounded" style={{ background: 'var(--bg-tertiary)' }}>
-                        <div className="bg-primary rounded p-2"><TerminalSquare size={20} color="var(--accent-primary)" /></div>
-                        <div>
+
+                    <div className="flex items-center gap-4 p-4 rounded transition-all" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid var(--border-subtle)' }}>
+                        <div className="bg-primary rounded p-2" style={{ background: 'rgba(59,130,246,0.1)' }}><TerminalSquare size={20} color="var(--accent-primary)" /></div>
+                        <div style={{ flex: 1 }}>
                             <strong className="block">Competitor Web Scraper Script</strong>
                             <span className="text-secondary text-sm">Monitors 3 main competitors for pricing changes and new case studies</span>
                         </div>
-                        <button className="btn btn-outline ml-auto text-xs">Run Workflow</button>
+                        <button className="btn btn-outline text-xs" onClick={() => handleRunWorkflow(2)} disabled={runningWorkflow === 2}>
+                            {runningWorkflow === 2 ? 'Running...' : 'Run Workflow'}
+                        </button>
                     </div>
                 </div>
             </div>
