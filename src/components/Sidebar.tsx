@@ -12,7 +12,8 @@ import {
     Bot,
     Users,
     Wallet,
-    Settings
+    Settings,
+    BookOpen
 } from 'lucide-react';
 
 export const Sidebar = () => {
@@ -28,6 +29,7 @@ export const Sidebar = () => {
         { name: 'Decision Engine', path: '/decisions', icon: <BrainCircuit size={18} /> },
         { name: 'Discipline Log', path: '/discipline', icon: <Shield size={18} /> },
         { name: 'AI Automations', path: '/ai', icon: <Bot size={18} /> },
+        { name: 'Cognitive Library', path: '/library', icon: <BookOpen size={18} /> },
     ];
 
     return (

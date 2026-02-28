@@ -12,6 +12,7 @@ import { DisciplineTracker } from './components/DisciplineTracker';
 import { AiAutomations } from './components/AiAutomations';
 import { NetworkCRM } from './components/NetworkCRM';
 import { Financials } from './components/Financials';
+import { CognitiveLibrary } from './components/CognitiveLibrary';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/ai" element={<AiAutomations />} />
             <Route path="/network" element={<NetworkCRM />} />
             <Route path="/financials" element={<Financials />} />
+            <Route path="/library" element={<CognitiveLibrary />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

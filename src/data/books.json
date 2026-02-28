@@ -1,0 +1,352 @@
+[
+  {
+    "title": "Zero to One",
+    "author": "Peter Thiel with Blake Masters",
+    "desc": "Thiel argues that genuine innovation means creating something entirely new — going from zero to one — rather than copying what already works. A contrarian manifesto on monopoly, secrets, and building the future."
+  },
+  {
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "desc": "The definitive framework for validated learning: build the smallest thing, measure real behavior, and learn faster than you burn."
+  },
+  {
+    "title": "The Mom Test",
+    "author": "Rob Fitzpatrick",
+    "desc": "How to ask customers the right questions so they can't lie to you — even when they're trying to be nice. Essential reading before any discovery interview."
+  },
+  {
+    "title": "The Startup Owner's Manual",
+    "author": "Steve Blank",
+    "desc": "The step-by-step guide to building a scalable startup using the Customer Development process. Dense, rigorous, and deeply practical."
+  },
+  {
+    "title": "Traction",
+    "author": "Gabriel Weinberg & Justin Mares",
+    "desc": "19 channels to grow any startup, with a framework (Bullseye) for finding the one that will move the needle for you right now."
+  },
+  {
+    "title": "Blitzscaling",
+    "author": "Reid Hoffman & Chris Yeh",
+    "desc": "Why some companies grow explosively and others don't. The counterintuitive logic of prioritizing speed over efficiency when winner-take-all markets are at stake."
+  },
+  {
+    "title": "Nail It Then Scale It",
+    "author": "Nathan Furr & Paul Ahlstrom",
+    "desc": "A practical startup process that forces product-market fit before scaling. Fixes the most common mistake: scaling before you've earned it."
+  },
+  {
+    "title": "High Growth Handbook",
+    "author": "Elad Gil",
+    "desc": "The tactical guide to the hardest part: managing hypergrowth. CEO role changes, board management, M&A, and hiring at scale."
+  },
+  {
+    "title": "Venture Deals",
+    "author": "Brad Feld & Jason Mendelson",
+    "desc": "Demystifies the VC term sheet clause by clause. Read this before any investor conversation. The founders who understand the terms get better terms."
+  },
+  {
+    "title": "Good to Great",
+    "author": "Jim Collins",
+    "desc": "A decade of research on why some companies make the leap from good to great — and most don't. The Hedgehog Concept and Level 5 Leadership changed how executives think about sustainable excellence."
+  },
+  {
+    "title": "Built to Last",
+    "author": "Jim Collins & Jerry Porras",
+    "desc": "What makes visionary companies last 50+ years while competitors fade? Core ideology, BHAGs, and building the clock rather than telling the time."
+  },
+  {
+    "title": "Competitive Strategy",
+    "author": "Michael Porter",
+    "desc": "The foundation of modern strategic thinking. Five forces, cost leadership vs differentiation, and why most companies don't actually have a strategy."
+  },
+  {
+    "title": "Crossing the Chasm",
+    "author": "Geoffrey Moore",
+    "desc": "Why technology products stall between early adopters and the mainstream — and the exact strategy to cross the gap. The bowling pin model for market conquest."
+  },
+  {
+    "title": "The Hard Thing About Hard Things",
+    "author": "Ben Horowitz",
+    "desc": "Unvarnished startup war stories. Horowitz writes about the decisions nobody prepares you for: laying off half your team, demoting a cofounder, managing through crisis."
+  },
+  {
+    "title": "No Rules Rules",
+    "author": "Reed Hastings & Erin Meyer",
+    "desc": "How Netflix built a culture of radical freedom and radical responsibility. The keeper test, candor as a value, and removing rules as a growth strategy."
+  },
+  {
+    "title": "Shoe Dog",
+    "author": "Phil Knight",
+    "desc": "The most honest memoir a founder has written. Knight describes building Nike — the near-bankruptcy, the obsession, the pivots — with uncommon vulnerability and craft."
+  },
+  {
+    "title": "7 Powers",
+    "author": "Hamilton Helmer",
+    "desc": "A rigorous framework for durable competitive advantage. Scale economies, network effects, switching costs, branding — and the precise conditions under which each is achievable."
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "desc": "The landmark work on cognitive bias and decision-making. Understanding System 1 and System 2 thinking is not optional for anyone making high-stakes decisions under uncertainty."
+  },
+  {
+    "title": "Mindset",
+    "author": "Carol Dweck",
+    "desc": "The science of growth mindset vs fixed mindset — and why the founders who treat failure as data outperform those who treat it as judgment."
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "author": "Viktor Frankl",
+    "desc": "Written in a Nazi concentration camp. Frankl's logotherapy shows that humans can endure almost any suffering if they have a clear why. Reframes how you think about adversity."
+  },
+  {
+    "title": "The Black Swan",
+    "author": "Nassim Nicholas Taleb",
+    "desc": "Why rare, unpredictable events dominate history — and how most of our models completely miss them. Changes how you think about risk, prediction, and preparing for the unknown."
+  },
+  {
+    "title": "Antifragile",
+    "author": "Nassim Nicholas Taleb",
+    "desc": "Some things break under stress, some resist it — and some get stronger. The framework for building systems, habits, and businesses that benefit from chaos."
+  },
+  {
+    "title": "The Obstacle Is the Way",
+    "author": "Ryan Holiday",
+    "desc": "Ancient Stoic philosophy applied to modern challenges. The discipline of turning every problem into fuel. The founders who read this stop being surprised by hard things."
+  },
+  {
+    "title": "Can't Hurt Me",
+    "author": "David Goggins",
+    "desc": "The raw, unfiltered story of mastering your mind through extreme adversity. The 40% rule: when your mind says stop, you're only at 40% of your actual capacity."
+  },
+  {
+    "title": "Why We Sleep",
+    "author": "Matthew Walker",
+    "desc": "The definitive case for why sleep is the single highest-leverage health intervention. The data on what sleep deprivation does to decision-making should terrify every founder who glorifies the grind."
+  },
+  {
+    "title": "Outlive",
+    "author": "Peter Attia",
+    "desc": "The framework for longevity: the four pillars (exercise, nutrition, sleep, mental health) and how to optimize each for both lifespan and healthspan. The operating manual for your body."
+  },
+  {
+    "title": "Protocols",
+    "author": "Andrew Huberman",
+    "desc": "Evidence-based behavioral and physiological tools for improving sleep, focus, mood, and physical performance. Actionable protocols derived from peer-reviewed neuroscience."
+  },
+  {
+    "title": "Body by Science",
+    "author": "Doug McGuff & John Little",
+    "desc": "Maximum strength and health results with minimum time investment. For founders who need to stay physically strong without a two-hour gym commitment."
+  },
+  {
+    "title": "Lifespan",
+    "author": "David Sinclair",
+    "desc": "The information theory of aging and what we can do about it today. Sinclair argues aging is a disease — and a solvable one. Reframes how you think about your body's trajectory."
+  },
+  {
+    "title": "Breath",
+    "author": "James Nestor",
+    "desc": "The lost art and science of breathing. How nasal breathing, proper technique, and breath control affect every aspect of performance, focus, and health."
+  },
+  {
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "desc": "Timeless lessons on wealth, greed, and happiness. Housel argues that financial success is more about behavior than intelligence — and that your relationship with money is shaped by experiences nobody taught you."
+  },
+  {
+    "title": "The Intelligent Investor",
+    "author": "Benjamin Graham",
+    "desc": "The bible of value investing. Margin of safety, Mr. Market, the difference between investing and speculating. Still the clearest framework for thinking about capital allocation."
+  },
+  {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "desc": "The mental models that reshape how you think about assets vs liabilities and why building systems that generate income matters more than earning a salary."
+  },
+  {
+    "title": "Same As Ever",
+    "author": "Morgan Housel",
+    "desc": "The patterns in human behavior that never change — and how identifying what is constant gives you an edge in a world obsessed with predicting what's next."
+  },
+  {
+    "title": "Secrets of Sand Hill Road",
+    "author": "Scott Kupor",
+    "desc": "The a16z COO explains exactly how venture capital works: how VCs raise money, how they evaluate deals, what they want from founders, and what every term sheet clause actually means."
+  },
+  {
+    "title": "The Almanack of Naval Ravikant",
+    "author": "Eric Jorgenson",
+    "desc": "Curated wisdom from Naval Ravikant on wealth creation, specific knowledge, and leverage. The distinction between renting your time vs building assets that work while you sleep."
+  },
+  {
+    "title": "High Output Management",
+    "author": "Andy Grove",
+    "desc": "Grove's blueprint for managing complex organizations. The managerial leverage model, one-on-ones as a tool, and how to think about your output as a function of your team's output."
+  },
+  {
+    "title": "Extreme Ownership",
+    "author": "Jocko Willink & Leif Babin",
+    "desc": "Navy SEAL leadership principles applied to business. The core idea: if something goes wrong in your organization, it's your fault as the leader. No exceptions. This reframe is transformative."
+  },
+  {
+    "title": "Measure What Matters",
+    "author": "John Doerr",
+    "desc": "The OKR framework that Intel, Google, and thousands of companies use to align teams and drive results. Clear goals with clear key results — and the discipline to track them honestly."
+  },
+  {
+    "title": "Radical Candor",
+    "author": "Kim Scott",
+    "desc": "How to give feedback that is both kind and direct. The two-axis model of caring personally + challenging directly. The management book most founders actually need but never read."
+  },
+  {
+    "title": "Turn the Ship Around!",
+    "author": "L. David Marquet",
+    "desc": "How a nuclear submarine commander went from worst to first by moving from leader-follower to leader-leader. Autonomy and intent-based leadership at its most practical."
+  },
+  {
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "desc": "2,500 years old and still the clearest writing on strategy, competition, and knowing yourself vs knowing your enemy. Short enough to read in an afternoon; deep enough to spend a lifetime with."
+  },
+  {
+    "title": "Influence",
+    "author": "Robert Cialdini",
+    "desc": "The six principles of persuasion — reciprocity, commitment, social proof, authority, liking, scarcity — with the science behind why they work. Required reading before writing any sales copy."
+  },
+  {
+    "title": "Obviously Awesome",
+    "author": "April Dunford",
+    "desc": "The step-by-step process for positioning a product so it sells itself. How to define your competitive alternatives, unique attributes, and customer value in a way that makes you the obvious choice."
+  },
+  {
+    "title": "The Challenger Sale",
+    "author": "Matthew Dixon & Brent Adamson",
+    "desc": "The research-backed discovery that the best B2B salespeople don't build relationships — they teach, tailor, and take control. The Challenger model for complex enterprise sales."
+  },
+  {
+    "title": "This Is Marketing",
+    "author": "Seth Godin",
+    "desc": "Marketing as changing people who want to be changed. The smallest viable market, finding your people before you have a product, and the distinction between attention and trust."
+  },
+  {
+    "title": "New Sales. Simplified.",
+    "author": "Mike Weinberg",
+    "desc": "The clearest, most practical guide to outbound sales. How to build pipeline from scratch, craft a sales story, and run a proactive prospecting routine that actually produces results."
+  },
+  {
+    "title": "SPIN Selling",
+    "author": "Neil Rackham",
+    "desc": "35,000 sales calls analyzed to find what actually works in complex sales. The SPIN framework (Situation, Problem, Implication, Need-Payoff) for asking questions that move deals forward."
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "desc": "The ability to focus without distraction on cognitively demanding tasks is becoming rare and valuable simultaneously. Newport's argument for radical focus is the intellectual foundation of the Deep Build Block in this system."
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "desc": "The 1% better daily framework. How to build systems that make good behavior automatic and bad behavior harder. The best practical book on behavior change written for people who don't like behavior change books."
+  },
+  {
+    "title": "Getting Things Done",
+    "author": "David Allen",
+    "desc": "The GTD methodology for capturing, clarifying, and completing all your commitments. When your mind is clear of open loops, cognitive bandwidth is available for creative and strategic work."
+  },
+  {
+    "title": "The ONE Thing",
+    "author": "Gary Keller",
+    "desc": "The focusing question: what's the one thing I can do such that by doing it, everything else becomes easier or unnecessary? A ruthless approach to prioritization through single-focus execution."
+  },
+  {
+    "title": "Essentialism",
+    "author": "Greg McKeown",
+    "desc": "The disciplined pursuit of less. Essentialism isn't about getting more done — it's about getting the right things done. The framework for saying no to almost everything so you can say yes to what matters."
+  },
+  {
+    "title": "The 4-Hour Work Week",
+    "author": "Tim Ferriss",
+    "desc": "Automation, elimination, and the New Rich. Whether or not you want a 4-hour work week, the frameworks for eliminating low-value work and creating leverage are essential thinking tools."
+  },
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "desc": "Private journal of a Roman Emperor who ruled the most powerful civilization on earth while trying to be a good human. 2,000 years old. Every page applies to building a company."
+  },
+  {
+    "title": "Letters from a Stoic",
+    "author": "Seneca",
+    "desc": "Seneca's letters are the most immediately usable philosophy ever written. On time, friendship, wealth, fear, and how to live well under pressure. Short letters, long impact."
+  },
+  {
+    "title": "12 Rules for Life",
+    "author": "Jordan Peterson",
+    "desc": "An antidote to chaos. Peterson synthesizes Jungian psychology, evolutionary biology, and philosophical tradition into practical rules for finding meaning and bearing responsibility."
+  },
+  {
+    "title": "Principles",
+    "author": "Ray Dalio",
+    "desc": "The life and work principles Dalio used to build Bridgewater, the world's largest hedge fund. Radical transparency, radical open-mindedness, and the machine-thinking framework for diagnosing problems."
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "desc": "The parable about following your personal legend. More founders have cited this book as the reason they started than almost any other. It doesn't teach strategy — it gives permission."
+  },
+  {
+    "title": "Steal Like an Artist",
+    "author": "Austin Kleon",
+    "desc": "How creative work actually happens: through influence, remixing, and synthesis of ideas from everywhere. Gives permission to build on others' work and find your own voice through the process."
+  },
+  {
+    "title": "Where Good Ideas Come From",
+    "author": "Steven Johnson",
+    "desc": "The natural history of innovation: slow hunches, adjacent possible, liquid networks. Ideas aren't eureka moments — they're evolutionary, combinatorial, and environmental."
+  },
+  {
+    "title": "The Creative Act",
+    "author": "Rick Rubin",
+    "desc": "The legendary music producer's philosophy of making. Attention, awareness, and the practice of noticing. Not a how-to book — a meditation on what it means to create anything."
+  },
+  {
+    "title": "The War of Art",
+    "author": "Steven Pressfield",
+    "desc": "Resistance — the force that prevents creative work — is the enemy. Pressfield names it, defines it, and gives the only strategy that works: sit down, start, and do the work professionally."
+  },
+  {
+    "title": "Flow",
+    "author": "Mihaly Csikszentmihalyi",
+    "desc": "The psychology of optimal experience. When challenge meets skill, consciousness becomes ordered and we enter flow. Understanding this state is understanding how to engineer your best creative and intellectual work."
+  },
+  {
+    "title": "Thinking in Systems",
+    "author": "Donella Meadows",
+    "desc": "The clearest introduction to systems thinking: feedback loops, stocks and flows, leverage points. Once you see systems, you can't unsee them — in markets, organizations, and behavior."
+  },
+  {
+    "title": "The Model Thinker",
+    "author": "Scott E. Page",
+    "desc": "Using multiple models to understand complex realities. Why a toolkit of 30 mental models outperforms deep expertise in one model. Essential for founders navigating ambiguous markets."
+  },
+  {
+    "title": "Superforecasting",
+    "author": "Philip Tetlock & Dan Gardner",
+    "desc": "The science of accurate prediction. Superforecasters update constantly, think probabilistically, and avoid hedged vagueness. The mindset of a good forecaster is the mindset of a good founder."
+  },
+  {
+    "title": "The Power Law",
+    "author": "Sebastian Mallaby",
+    "desc": "The definitive history of venture capital and why power law distributions shape everything in startups. Why one winner returns more than all other investments combined — and what that means for decisions."
+  },
+  {
+    "title": "Complexity",
+    "author": "M. Mitchell Waldrop",
+    "desc": "The story of the Santa Fe Institute and the science of complex adaptive systems. How economies, ecosystems, and markets self-organize — and why linear cause-and-effect thinking fails in complex systems."
+  },
+  {
+    "title": "The Innovator's Dilemma",
+    "author": "Clayton Christensen",
+    "desc": "Why great companies fail when confronted with disruptive innovation — and how to use the same forces to attack incumbents. The best mental model for understanding where startup opportunities hide."
+  }
+]
